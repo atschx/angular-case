@@ -3,7 +3,7 @@ import { Todo } from './todo.model';
 import { TodoService } from './todo.service';
 
 @Component({
-  selector: 'app-todo',
+  // selector: 'app-todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css'],
   providers: [TodoService]
@@ -14,7 +14,7 @@ export class TodoComponent implements OnInit {
   todos: Todo[] = [];
   desc = '';
 
-  constructor(private service: TodoService) {}
+  constructor(private service: TodoService) { }
   ngOnInit() {
     this.getTodos();
   }
@@ -50,6 +50,10 @@ export class TodoComponent implements OnInit {
           ...this.todos.slice(i + 1)
         ];
       });
+  }
+
+  onTextChanges(value) {
+    this.desc = value;
   }
   getTodos(): void {
     this.service

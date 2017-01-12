@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
-/*button {
+button {
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,7 +17,7 @@ html, body {
     appearance: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}*/
+}
 body {
     font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.4em;
