@@ -1,0 +1,20 @@
+{
+  "name": "hello-angular2",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Albert Sun <atschx@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/atschx/angular2-ongoing",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
