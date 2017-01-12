@@ -9,17 +9,22 @@ import { LoginComponent } from './login/login.component';
 
 import { AuthService } from './core/auth.service';
 
+import { routing } from './app.routes';
+import { TodoComponent } from './todo/todo.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
-  providers: [ {provide: 'auth',  useClass: AuthService}],
+  providers: [{ provide: 'auth', useClass: AuthService }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

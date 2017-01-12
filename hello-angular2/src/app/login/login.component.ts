@@ -18,11 +18,8 @@ export class LoginComponent implements OnInit {
   }
 
   onClick() {
-    // console.log("you("+username+":"+password+") click");
-    // console.log('username:' + username + "\n\r" + "password:" + password);
+    
     console.log(this.service.logWithUsernameAndPassword(this.username, this.password));
-    // this.username=username;
-    // this.password=password;
 
   }
 
